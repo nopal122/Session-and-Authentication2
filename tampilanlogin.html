@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tampilan Permasalahan</title>
+</head>
+<body>
+    <p><b>Proses Login</b></p>
+    <form action="loginutama.php" method="GET"> <!--This form will be connected with loginutama.php--> 
+        <p>Username : <input type="text" name="username"></p>
+        <p>Password : <input type="password" name="sandi"></p>
+        <select name="job">
+            <option value="Dosen">Dosen</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+        </select>
+        <br>
+        <input type="submit" name="masuk" value="Login">
+    </form>
+    <p><b>=======================================================</b></p>
+    <p><b>Pendaftaran User Baru</b></p>
+    <form action="registrasi.php" method="GET"> <!--This form will be connected with registrasi.php--> 
+        <p>Username : <input type="text" name="namabaru"></p>
+        <p>Password : <input type="password" name="passwordbaru"></p>
+        <select name="job">
+            <option value="Dosen">Dosen</option>
+            <option value="Mahasiswa">Mahasiswa</option>
+        </select>
+        <input type="submit" name="daftarbaru" value="Sign Up">
+    </form>
+</body>
+</html>
